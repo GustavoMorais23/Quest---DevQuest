@@ -1,0 +1,47 @@
+@media screen and (max-width:768px){
+    body {
+        width: 400px;
+        margin: 20px auto;
+        background: url(../img/bg-mobile.svg);
+        background-color: var(--color-violet);
+        background-repeat: no-repeat;
+    }
+    
+    img {
+        max-width: 350px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagem {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .informacoes {
+        margin-left: 10px;
+        text-align: center;
+        align-items: center;
+        width: 300px;
+    }
+
+    .informacoes .titulo {
+        font-size: 22px;
+    }
+
+    .informacoes .descricao {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .redes {
+        width: 300px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+}

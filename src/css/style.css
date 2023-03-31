@@ -1,0 +1,92 @@
+
+.image {
+    grid-area: imagem;
+}
+
+.informacoes {
+    grid-area: info;
+}
+
+.redes {
+    grid-area: redes;
+}
+
+.container {
+    max-width: 900px;
+    display: grid;
+    grid: "imagem info"
+    "imagem redes";
+
+    grid-template-columns: 1fr 270px;
+    grid-template-rows:1fr;
+    gap: 20px;
+    padding: 30px;
+}
+
+.logo {
+    margin-bottom: 60px;
+}
+
+.informacoes {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informacoes .titulo {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    color: var(--color-text-white);
+    font-weight: bold;
+    margin-bottom: 20px;
+    word-spacing: 8px;
+}
+
+.informacoes .descricao {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: var(--color-text-white);
+    font-weight: 400;
+}
+
+.informacoes .btn-register {
+    font-family: 'Open Sans', sans-serif;
+    width: 170px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 40px;
+    transition:0.3s ease-in-out;
+    
+}
+
+.informacoes .btn-register:hover {
+    color: var(--color-text-white);
+    background-color: var(--color-magenta);  
+    cursor: pointer;  
+}
+
+.redes {
+    width: 400px;
+    display: flex;
+    justify-content: right;
+}
+
+.redes a {
+    margin-left: 15px;
+    color: var(--color-text-white);
+    border: 1px solid var(--color-text-white);
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+
+.redes a:hover {
+border: 1px solid var(--color-magenta);   
+color: var(--color-magenta);
+}
+
+
+
